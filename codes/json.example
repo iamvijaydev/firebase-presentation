@@ -1,0 +1,22 @@
+{
+    "key": "value",
+    "key is always string": "value",
+    "key should be unique": "value",
+    ...
+    ...
+    //
+    //
+    /*
+     *
+     *
+    */
+    "key_string": "value as string",
+    "key_number": 12,
+    "key_array": [1, 2, 3]
+    "key_object": {
+        "child_key": 13,
+        "child_object: {
+            "grand_child_key: 11
+        }
+    },
+}
