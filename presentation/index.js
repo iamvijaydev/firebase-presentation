@@ -29,9 +29,9 @@ const theme = createTheme({
   tertiary: "#03A9FC",
   quarternary: "#CECECE"
 }, {
-    primary: "Montserrat",
-    secondary: "Helvetica"
-  });
+  primary: "Montserrat",
+  secondary: "Helvetica"
+});
 
 export default class Presentation extends React.Component {
   render() {
@@ -41,14 +41,14 @@ export default class Presentation extends React.Component {
           <Heading size={1} fit caps lineHeight={1} textColor="#fff">
             Firebase
           </Heading>
-          <Text margin="10px 0 0" textColor="#FFE082" size={1} bold>Build better mobile apps and grow your business</Text>
+          <Text margin="10px 0 0" textColor="#FFE082" size={1} bold>Build better apps and grow your business</Text>
         </Slide>
 
         <Slide transition={["zoom"]} bgColor="#f44336">
           <Heading size={1} fit caps lineHeight={1} textColor="#fff">
             I'm Vijay Dev
           </Heading>
-          <Text margin="10px 0 0" textColor="#FFAB91" size={1} fit bold>I build stuff.</Text>
+          <Text margin="10px 0 0" textColor="#FFAB91" size={1} fit bold>Lead front-end engineer</Text>
         </Slide>
 
         <Slide transition={["zoom"]} bgColor="#f44336">
@@ -61,19 +61,19 @@ export default class Presentation extends React.Component {
             "echo \"Let's begin!\"",
             "npm install http-server firebase-tools --global",
             <div>
-                [................] / rollbackFailedOptional: <span style={{
+              [................] / rollbackFailedOptional: <span style={{
                 color: "#29B6F6"
               }}>verb</span> <span style={{
                 color: "#9CCC65"
               }}>npm-session</span> 1c987dd8nn08
             </div>
-            ]}
+          ]}
           />
         </Slide>
 
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="#fff">
-            Say hello to Firebase
+            Why Firebase?
           </Heading>
           <Text margin="10px 0 0" textColor="tertiary" size={6} bold>Before that, we need to take a look at the two basic components of a web browser.</Text>
         </Slide>
