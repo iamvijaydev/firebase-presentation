@@ -37,12 +37,40 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Deck transition={["zoom", "slide"]} transitionDuration={500} theme={theme} progress="bar">
+        <Slide transition={["zoom"]} bgColor="#FF8F00">
+          <Heading size={1} fit caps lineHeight={1} textColor="#fff">
+            Firebase
+          </Heading>
+          <Text margin="10px 0 0" textColor="#FFE082" size={1} bold>Build better mobile apps and grow your business</Text>
+        </Slide>
+
         <Slide transition={["zoom"]} bgColor="#f44336">
           <Heading size={1} fit caps lineHeight={1} textColor="#fff">
-            Hi, I'm Vijay Dev
+            I'm Vijay Dev
           </Heading>
           <Text margin="10px 0 0" textColor="#FFAB91" size={1} fit bold>I build stuff.</Text>
         </Slide>
+
+        <Slide transition={["zoom"]} bgColor="#f44336">
+          <Heading size={1} fit caps lineHeight={1} textColor="#fff">
+            But first...
+          </Heading>
+          <Terminal title="~(zsh)" output={[
+            "echo \"Gotta install some npm packages...\"",
+            "echo \"I hope everyone has already installed node and npm\"",
+            "echo \"Let's begin!\"",
+            "npm install http-server firebase-tools --global",
+            <div>
+                [................] / rollbackFailedOptional: <span style={{
+                color: "#29B6F6"
+              }}>verb</span> <span style={{
+                color: "#9CCC65"
+              }}>npm-session</span> 1c987dd8nn08
+            </div>
+            ]}
+          />
+        </Slide>
+
         <Slide transition={["zoom"]} bgColor="primary">
           <Heading size={1} fit caps lineHeight={1} textColor="#fff">
             Say hello to Firebase
@@ -82,7 +110,7 @@ export default class Presentation extends React.Component {
           ]}
         />
 
-        <Slide transition={["zoom"]} bgColor="#f44336"> 
+        <Slide transition={["zoom"]} bgColor="#f44336">
           <Heading size={1} fit caps lineHeight={1} textColor="#fff">
             Hello World!
           </Heading>
@@ -96,7 +124,8 @@ export default class Presentation extends React.Component {
             "http-server",
             <div>
               <div style={{ color: "#DEC612" }}>Starting up http-server, serving <span style={{
-                color: "#29B6F6" }}>./</span></div>
+                color: "#29B6F6"
+              }}>./</span></div>
               <div style={{ color: "#DEC612" }}>Available on:</div>
               <div>    http://192.168.0.15:<span style={{
                 color: "#9CCC65"
